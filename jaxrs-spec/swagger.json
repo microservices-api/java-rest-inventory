@@ -1,7 +1,7 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "Demonstration of API Lifecycle integration.  For more\ninformation, you can see documentation at [https://fehguy-demo-api.herokuapp.com/docs](https://fehguy-demo-api.herokuapp.com/docs).\n\nSource code can be found on [Github](https://github.com/fehguy/demo-api).\n",
+    "description" : "Demonstration of API Lifecycle integration.  ",
     "version" : "1.0.0",
     "title" : "Demo API"
   },
