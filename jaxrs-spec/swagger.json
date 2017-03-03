@@ -5,7 +5,7 @@
     "version" : "1.0.0",
     "title" : "Demo API"
   },
-  "host" : "fehguy-demo-api.herokuapp.com",
+  "host" : "bluemix.net",
   "basePath" : "/api",
   "tags" : [ {
     "name" : "Inventory",
