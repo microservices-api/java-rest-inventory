@@ -1,0 +1,131 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Demonstration of API Lifecycle integration.  For more\ninformation, you can see documentation at [https://fehguy-demo-api.herokuapp.com/docs](https://fehguy-demo-api.herokuapp.com/docs).\n\nSource code can be found on [Github](https://github.com/fehguy/demo-api).\n",
+    "version" : "1.0.0",
+    "title" : "Demo API"
+  },
+  "host" : "fehguy-demo-api.herokuapp.com",
+  "basePath" : "/api",
+  "tags" : [ {
+    "name" : "Inventory",
+    "description" : "Operations to manage Online Inventory"
+  } ],
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/inventory" : {
+      "get" : {
+        "tags" : [ "Inventory" ],
+        "summary" : "Returns inventory from the system",
+        "description" : "longer description",
+        "operationId" : "getInventory",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "skip",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Returns the inventory for the query",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/InventoryItem"
+              }
+            }
+          }
+        },
+        "x-accepts" : "application/json",
+        "x-contentType" : "application/json"
+      },
+      "post" : {
+        "tags" : [ "Inventory" ],
+        "summary" : "Adds a new item to the inventory",
+        "description" : "Duplicate SKUs will be rejected",
+        "operationId" : "addInventory",
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "inventory",
+          "description" : "The inventory item to add",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/InventoryItem"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Item created"
+          },
+          "400" : {
+            "description" : "General Error",
+            "schema" : {
+              "$ref" : "#/definitions/GenericError"
+            }
+          }
+        },
+        "x-accepts" : "application/json",
+        "x-contentType" : "application/json"
+      }
+    },
+    "/inventory/{sku}" : {
+      "delete" : {
+        "tags" : [ "Inventory" ],
+        "summary" : "Deletes an item by its SKU",
+        "operationId" : "deleteItemBySKU",
+        "parameters" : [ {
+          "name" : "sku",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Item successfully deleted"
+          }
+        },
+        "x-accepts" : "application/json",
+        "x-contentType" : "application/json"
+      }
+    }
+  },
+  "definitions" : {
+    "InventoryItem" : {
+      "type" : "object",
+      "required" : [ "name", "sku" ],
+      "properties" : {
+        "sku" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        }
+      }
+    },
+    "GenericError" : {
+      "required" : [ "code", "message" ],
+      "properties" : {
+        "code" : {
+          "type" : "string",
+          "example" : "EE-877331",
+          "description" : "The error code which should be used for localized\nmessaging to the end user\n"
+        },
+        "message" : {
+          "type" : "string",
+          "example" : "General error, contact please contact your support agent"
+        },
+        "errorId" : {
+          "type" : "string",
+          "format" : "UUID",
+          "example" : "7c64cc53-0e80-47be-a5a4-f084c89d0521",
+          "description" : "An identifier used in the centralized log collection\nfacility for cross-referencing and support follow-up\n"
+        }
+      },
+      "description" : "A generalized error response which contains the product-\nspecific error code and an identifier for cross-referencing\nin the error logs.\n"
+    }
+  },
+  "x-ibm-name" : "demo-api"
+}
