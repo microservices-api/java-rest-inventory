@@ -1,7 +1,7 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "Demonstration of API Lifecycle integration.  ",
+    "description" : "Demonstration of API Lifecycle integration. ",
     "version" : "1.0.0",
     "title" : "Demo API"
   },
@@ -126,5 +126,6 @@
       },
       "description" : "A generalized error response which contains the product-\nspecific error code and an identifier for cross-referencing\nin the error logs.\n"
     }
-  }
+  },
+  "x-ibm-name" : "demo-api"
 }
