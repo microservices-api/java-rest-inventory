@@ -1,0 +1,18 @@
+<server description="API discovery demo">
+
+    <!-- Enable features -->
+	<featureManager>
+	 <feature>apiDiscovery-1.0</feature> 
+	 <feature>jaxrs-2.0</feature>
+	 <feature>jsonp-1.0</feature>
+	</featureManager>
+
+	<keyStore id="defaultKeyStore" password="Liberty"/>
+  
+	<basicRegistry id="basic" realm="ibm/api">
+		<user name="dev" password="dev"/>
+	</basicRegistry>
+  
+	<httpEndpoint host="*" httpPort="8010" httpsPort="8020" id="defaultHttpEndpoint"/>
+             
+</server>
