@@ -3,7 +3,7 @@
   "info" : {
     "description" : "Demonstration of API Lifecycle integration.  ",
     "version" : "1.0.0",
-    "title" : "Demo API"
+    "title" : "InterConnect Demo API"
   },
   "host" : "libertyswagger.mybluemix.net",
   "basePath" : "/api",
