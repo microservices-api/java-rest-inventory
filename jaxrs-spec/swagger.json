@@ -5,7 +5,7 @@
     "version" : "1.0.0",
     "title" : "Demo API"
   },
-  "host" : "bluemix.net",
+  "host" : "libertyswagger.mybluemix.net",
   "basePath" : "/api",
   "tags" : [ {
     "name" : "Inventory",
