@@ -1,7 +1,7 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "Demonstration of API Lifecycle integration.  ",
+    "description" : "Demonstration of API Lifecycle integration.",
     "version" : "1.0.0",
     "title" : "InterConnect Demo API"
   },
