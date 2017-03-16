@@ -3,7 +3,8 @@
   "info" : {
     "description" : "Demonstration of API Lifecycle integration.",
     "version" : "1.0.0",
-    "title" : "InterConnect Demo API"
+    "title" : "InterConnect Demo API",
+    "x-ibm-css" : "${server.config.dir}/custom_with_css/oai-banner.css"
   },
   "host" : "libertyswagger.mybluemix.net",
   "basePath" : "/api",
@@ -126,5 +127,6 @@
       },
       "description" : "A generalized error response which contains the product-\nspecific error code and an identifier for cross-referencing\nin the error logs.\n"
     }
-  }
+  },
+  "x-ibm-name" : "api-8382b"
 }
