@@ -1,0 +1,10 @@
+.swagger-section #header {
+  background-image: url(images/custom-logo.png);
+  background-repeat: no-repeat;
+  background-color: 	#edf0f5;
+  background-position-x: 28px;
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+}

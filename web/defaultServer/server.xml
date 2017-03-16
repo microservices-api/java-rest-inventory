@@ -15,4 +15,6 @@
   
 	<httpEndpoint host="*" httpPort="8010" httpsPort="8020" id="defaultHttpEndpoint"/>
              
+<apiDiscovery publicURL="cloud" swaggerDefinition="${server.config.dir}/custom_with_css/custom.json"/>
+
 </server>

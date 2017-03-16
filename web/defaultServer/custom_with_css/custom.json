@@ -1,0 +1,17 @@
+{
+  "swagger":"2.0",
+  "info":{  
+            "title": "Airline APIs",
+            "description": "APIs to book flights and check their status",
+            "version": "2.1.0",
+             "x-ibm-css":"${server.config.dir}/custom_with_css/acme-banner.css",
+             "termsOfService":"http://swagger.io/terms/",
+             "contact":{
+                "email":"apiteam@swagger.io"
+             },
+             "license":{
+                "name":"Apache 2.0",
+                "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+             }
+           }
+}
