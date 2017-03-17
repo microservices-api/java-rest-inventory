@@ -6,7 +6,7 @@
     "title" : "InterConnect Demo API",
     "x-ibm-css" : "${server.config.dir}/custom_with_css/oai-banner.css"
   },
-  "host" : "libertyswagger.mybluemix.net",
+  "host" : "libertyswagger.mybluemix.net:443",
   "basePath" : "/api",
   "tags" : [ {
     "name" : "Inventory",
