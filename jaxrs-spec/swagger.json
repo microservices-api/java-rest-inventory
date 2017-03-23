@@ -128,5 +128,5 @@
       "description" : "A generalized error response which contains the product-\nspecific error code and an identifier for cross-referencing\nin the error logs.\n"
     }
   },
-  "x-ibm-name" : "api-8382b"
+  "x-ibm-name" : "interconnect-demo-api"
 }
