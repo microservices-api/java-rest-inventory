@@ -20,7 +20,7 @@ public class InventoryItem   {
   }
 
   
-  @ApiModelProperty(required = true, value = "")
+  @ApiModelProperty(example = "abc123-xyz", required = true, value = "")
   public String getSku() {
     return sku;
   }
@@ -36,7 +36,7 @@ public class InventoryItem   {
   }
 
   
-  @ApiModelProperty(required = true, value = "")
+  @ApiModelProperty(example = "macbook", required = true, value = "")
   public String getName() {
     return name;
   }

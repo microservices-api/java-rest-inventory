@@ -99,10 +99,12 @@
       "required" : [ "name", "sku" ],
       "properties" : {
         "sku" : {
-          "type" : "string"
+          "type" : "string",
+          "example" : "abc123-xyz"
         },
         "name" : {
-          "type" : "string"
+          "type" : "string",
+          "example" : "macbook"
         }
       }
     },
