@@ -15,7 +15,7 @@ import java.util.List;
 @Api(description = "the inventory API")
 
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2017-05-16T00:26:59.148Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2017-05-16T19:18:28.777Z")
 
 public class InventoryApi  {
 
